@@ -1,0 +1,30 @@
+h1 {
+    font-size: 14;
+    color: red;
+}
+
+.jumbotron {
+    background-image: url(https://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg)
+}
+
+
+#hi {
+    height: 200px;
+    text-align: center;
+}
+
+.page-header {
+    height: 170px;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.page-header img {
+    display:block;
+    margin: 0px auto;
+    height: 200px;
+    margin-top: -70px;
+}
+
+
+

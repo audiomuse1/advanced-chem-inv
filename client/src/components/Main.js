@@ -5,7 +5,7 @@ import CreateCountriesContainer from "../containers/CreateCountriesContainer";
 function Main() {
     return (
         <div>
-            <h1>Countries</h1>
+            <h1>Chemicals</h1>
             <CountriesContainer />
             <CreateCountriesContainer />
         </div>

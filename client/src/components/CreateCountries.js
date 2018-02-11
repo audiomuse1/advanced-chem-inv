@@ -18,7 +18,7 @@ class CreateCountries extends React.Component {
         return (
             <div>
                 <div>
-                    <h2>Country</h2>
+                    <h2>Chemical</h2>
                     <form onSubmit={(e) => {
                         e.preventDefault();
                         if (this.props.addCountry) {

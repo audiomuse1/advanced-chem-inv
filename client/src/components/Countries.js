@@ -7,6 +7,7 @@ function Countries (props) {
         return (
             <div key={i}>
                 {country.continent} {country.capital} {country.leader}
+                {country.population}{country.currency}
                 <button onClick={() => 
                 props.deleteCountry(country._id)}>Delete</button>
                 <Link to={"/countries/" + country._id}>View Details</Link>
