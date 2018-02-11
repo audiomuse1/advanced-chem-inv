@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {users: []};
   }
   componentDidMount() {
-    this.props.loadCars();
+    this.props.loadCountries();
   }
   render() {
     return (

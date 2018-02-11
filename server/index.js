@@ -7,7 +7,7 @@ const app = express();
 
 mongoose.set("debug", true);
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/checkpoint2");
+mongoose.connect("mongodb://audiomuse:Nbs76gf$@ds227168.mlab.com:27168/aca-heroku");
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 3001;
