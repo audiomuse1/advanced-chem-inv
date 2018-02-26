@@ -11,11 +11,11 @@ class Country extends Component {
 
         return (
             <div>
-                <div>{this.props.country.continent}</div>
-                <div>{this.props.country.capital}</div>
-                <div>{this.props.country.leader}</div>
-                <div>{this.props.country.population}</div>
-                <div>{this.props.country.currency}</div>
+                <div>Chemical Name: {this.props.country.continent}</div>
+                <div>Chemical Formula: {this.props.country.capital}</div>
+                <div>CAS Number: {this.props.country.leader}</div>
+                <div>Product ID: {this.props.country.population}</div>
+                <div>Price:{this.props.country.currency}</div>
             </div>
         );
     }

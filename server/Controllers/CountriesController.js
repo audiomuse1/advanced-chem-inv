@@ -10,7 +10,7 @@ export function list(request, response) {
 export function show(request, response) {
     Country.findById(request.params.id).exec()
     .then(country => {
-        return response.json(countries);
+        return response.json(country);
     });
 }
 

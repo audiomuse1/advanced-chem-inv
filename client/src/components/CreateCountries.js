@@ -26,7 +26,7 @@ class CreateCountries extends React.Component {
                         }
                     }}>
                     <div>
-                        continent: <input onChange={(e) => {
+                    Chemical Name: <input onChange={(e) => {
                             const country = {continent: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -34,7 +34,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                        capital: <input onChange={(e) => {
+                    Chemical Formula: <input onChange={(e) => {
                             const country = {capital: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -42,7 +42,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>   
                     <div>
-                        leader: <input onChange={(e) => {
+                    CAS Number: <input onChange={(e) => {
                             const country = {leader: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -50,7 +50,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                        population: <input onChange={(e) => {
+                    Product ID: <input onChange={(e) => {
                             const country = {population: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)
@@ -58,7 +58,7 @@ class CreateCountries extends React.Component {
                         }} />
                     </div>
                     <div>
-                        currency: <input onChange={(e) => {
+                    Price: <input onChange={(e) => {
                             const country = {currency: e.target.value};
                             this.setState({
                                 country: Object.assign(this.state.country,country)

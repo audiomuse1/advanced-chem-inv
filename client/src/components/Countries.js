@@ -11,6 +11,7 @@ function Countries (props) {
                 <button onClick={() => 
                 props.deleteCountry(country._id)}>Delete</button>
                 <Link to={"/countries/" + country._id}>View Details</Link>
+
             </div>);
         });
         return (
