@@ -45,6 +45,7 @@
     "foreman": "^2.0.0",
     "jwt-simple": "^0.5.1",
     "mongoose": "^4.10.2",
+    "node": "^9.5.0",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
