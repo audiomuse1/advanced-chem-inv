@@ -1,18 +1,25 @@
 {
-  "name": "advanced-checkpoint-2",
+  "name": "heroku-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src",
-    "dev": "nodemon --exec babel-node server/index",
+    "lint": "eslint server",
+    "api-dev": "nodemon --exec \"babel-node server/index\"",
     "test": "npm run lint",
-    "start": "nf start"
+    "dev": "nf start",
+    "build-client": "cd client && npm run build",
+    "clean-assets": "rm -rf ./public/*",
+    "copy-assets": "mkdir -p ./public && cp -R ./client/build/* ./public",
+    "compile-server": "rm -rf ./dist && babel server --out-dir dist",
+    "pre-deploy": "npm run compile-server && npm run build-client && npm run clean-assets && npm run copy-assets",
+    "start": "node ./dist/index",
+    "postinstall": "npm run pre-deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
@@ -31,11 +38,9 @@
     "eslint-plugin-babel": "^4.1.0",
     "eslint-plugin-react": "^6.10.0",
     "foreman": "^2.0.0",
-    "nodemon": "^1.11.0"
-  },
-  "dependencies": {
-    "bcrypt": "^0.8.7",
-    "body-parser": "^1.17.1",
+    "nodemon": "^1.11.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.2",
     "create-react-app": "1.2.1",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
@@ -44,15 +49,14 @@
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
-    "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
     "react-scripts": "^0.9.5",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
     "whatwg-fetch": "^2.0.3"
   },
   "proxy": "http://localhost:3001"
 }
+© 2018 GitHub, Inc.
