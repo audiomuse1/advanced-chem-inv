@@ -17,4 +17,10 @@ app.listen(port, () => {
   console.log(`Listening on port:${port}`);
 });
 
+app.use(express.static('public'));
+
+app.get('/', (req, res, next) => {
+  res.sendFile('public/index.html');
+});
+
 app.use(countryRoutes);
