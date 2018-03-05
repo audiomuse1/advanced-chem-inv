@@ -1,4 +1,4 @@
-import Country from "../models/Country";
+import Country from "../Models/Country";
 
 export function list(request, response) {
     Country.find({}).exec()
